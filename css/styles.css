@@ -285,7 +285,10 @@ header .intro h2.title {
 }
 
 .blocks{
-    width: 19%;
+  font-family: "Roborto", sans-serif;   
+  text-align: center;
+  line-height: 0;
+  width: 49%;
   display: inline-block;
 }
 

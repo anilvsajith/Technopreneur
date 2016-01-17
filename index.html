@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Technopreneur - Alpha</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<!--script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script-->
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+				sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Home', 'Technopreneur', 'About MEC','Our Legacy','Contact Us']
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section whitebg" id="section0">
+        <img data-link="http:www.mec.ac.in" src="images/mec_logo.png" width="200" id="meclogo" >
+        <div class="date-head">
+            <p>5 - 7 March 2016</p>
+            <p><big>Big Hall</big></p>
+        </div>
+        <div id="banner-head">
+            <a href="#">
+                <p><span class="banner-text">Register Now</span></p>
+            </a>
+        </div>
+		<div class="intro">
+			<!--h1>Navigation dots</h1>
+			<p>An easy and beautiful way to navigate throw the sections</p-->
+            <img data-link="http:www.mec.ac.in" src="images/iedc.png" id="iedclogo" >
+            
+            <img src="images/logo.png" width="850" id="mainlogo">
+            <!--h6 id="presents">presents</h6--><br><br><br><br>
+            <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-l" style="margin-left:40%;">Register Now</button>
+		</div>
+        
+	</div>
+    <div class="section" id="section1">
+		<div class="block container">
+        <h3 class="title">Technopreneur '16
+          <span class="heading-divider"></span>
+            </h3>
+        <h6>
+          Technopreneur, whose first edition in 2006 went on to win the best Yi-Net event at the CII National Summit in Mumbai, is a platform where technology meets entrepreneurship. The symposium scope is to provide a thematic umbrella for entrepreneurs to share their ground breaking ideas and their true life stories of triumph. Technopreneur 2016 will embrace this humble tradition and in addition intends to furnish training and skillful guidance to hungry minds seeking to captain an enterprise of their own, over a two day period filled with innovation and enlightenment.
+        </h6>
+
+
+      </div>
+	</div>
+    <div class="section" id="section2">
+		<div class="block container">
+        <h3 class="title">Model Engineering College
+          <span class="heading-divider"></span>
+            </h3>
+        <h6>
+          In the 26 years since its inception, Govt. Model Engineering College (MEC), Kochi has carved a niche for itself as one of the best Engineering colleges in the state. Ranked 41 in India among the top engineering colleges by Outlook Magazine in 2015, MEC is also one of the most sought out colleges in India with the likes of Yahoo, Nvidia, Deloitte, Bosch, Broadcom, TCS, etc visiting the campus consistently.
+Along with its record breaking placements and academic excellence, the array of events it hosts has been praised for their caliber and dynamism, embracing the right mix of technology and innovation for a growing and constantly evolving community.
+        </h6>
+
+
+      </div>
+	</div>
+	<div class="section" id="section3">
+	    <div class="container">
+
+        <h3 class="title">Our Legacy
+          <span class="heading-divider"></span>
+            </h3>
+                <!-- Speakers row -->
+                <div class="row thumbnails clear">
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="100">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                    <div class="hex-inner">
+                                        <div class="media">
+                                            <img src="images/speaker-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Dr. K. Radhakrishnan</h3>
+                                <p class="caption-category">Chairman, ISRO</p>
+                            </div>
+                            <div class="caption">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="300">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                    <div class="hex-deg">
+                                        <div class="hex-deg">
+                                            <div class="hex-inner">
+                                                <div class="media">
+                                                    <img src="images/speaker-2.jpg" alt="">
+                                                    <div class="caption hovered">
+                                                        <div class="caption-wrapper div-table">
+                                                            <div class="caption-inner div-cell">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Sam Pitroda</h3>
+                                <p class="caption-category">Former advisor to pm</p>
+                            </div>
+                            <div class="caption">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="500">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                    <div class="hex-deg">
+                                        <div class="hex-deg">
+                                            <div class="hex-inner">
+                                                <div class="media">
+                                                    <img src="images/speaker-3.jpg" alt="">
+                                                    <div class="caption hovered">
+                                                        <div class="caption-wrapper div-table">
+                                                            <div class="caption-inner div-cell">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Kris Gopalakrishnan</h3>
+                                <p class="caption-category">former ceo, infosys</p>
+                            </div>
+                            <div class="caption">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="100">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                    <div class="hex-inner">
+                                        <div class="media">
+                                            <img src="images/speaker-8.jpg" alt="">
+                                            <div class="caption hovered">
+                                                <div class="caption-wrapper div-table">
+                                                    <div class="caption-inner div-cell">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Sudha Chandran</h3>
+                                <p class="caption-category">Renowned Entertainer</p>
+                            </div>
+                            <div class="caption">                             
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                                    
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="100">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                    <div class="hex-inner">
+                                        <div class="media">
+                                            <img src="images/speaker-7.jpg" alt="">
+                                            <div class="caption hovered">
+                                                <div class="caption-wrapper div-table">
+                                                    <div class="caption-inner div-cell">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Sanjay Vijayakumar</h3>
+                                <p class="caption-category">Chairman, SV Kochi</p>
+                            </div>
+                            <div class="caption">                             
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="100">
+                        <!--div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                    <div class="hex-inner">
+                                        <div class="media">
+                                            <img src="images/speaker-5.jpg" alt="">
+                                            <div class="caption hovered">
+                                                <div class="caption-wrapper div-table">
+                                                    <div class="caption-inner div-cell">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Shaffi Mather</h3>
+                                <p class="caption-category">economic advisor to cm</p>
+                            </div>
+                            <div class="caption">                             
+                                
+                            </div>
+                        </div-->
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="100">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                    <div class="hex-inner">
+                                        <div class="media">
+                                            <img src="images/speaker-5.jpg" alt="">
+                                            <div class="caption hovered">
+                                                <div class="caption-wrapper div-table">
+                                                    <div class="caption-inner div-cell">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Shaffi Mather</h3>
+                                <p class="caption-category">Former Economic Advisor to cm</p>
+                            </div>
+                            <div class="caption">                             
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="100">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                <div class="hex-deg">
+                                    <div class="hex-inner">
+                                        <div class="media">
+                                            <img src="images/speaker-4.jpg" alt="">
+                                            <div class="caption hovered">
+                                                <div class="caption-wrapper div-table">
+                                                    <div class="caption-inner div-cell">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Dr. CV Ananda Bose</h3>
+                                <p class="caption-category">former secretary to govt. of india</p>
+                            </div>
+                            <div class="caption">                             
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="col-sm-6 col-md-2" data-animation="fadeInUp" data-animation-delay="700">
+                        <div class="thumbnail no-border no-padding text-center">
+                            <div class="hex">
+                                <div class="hex-deg">
+                                    <div class="hex-deg">
+                                        <div class="hex-deg">
+                                            <div class="hex-inner">
+                                                <div class="media">
+                                                    <img src="images/speaker-6.jpg" alt="">
+                                                    <div class="caption hovered">
+                                                        <div class="caption-wrapper div-table">
+                                                            <div class="caption-inner div-cell">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caption before-media">
+                                <h3 class="caption-title">Kochouseph Chittilappilly</h3>
+                                <p class="caption-category">Chairman, V-Guard</p>
+                            </div>
+                            <div class="caption">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+               
+                
+                <!-- /Speakers row -->
+
+            </div>
+	</div>
+	<div class="section" id="section4">
+        <iframe width="100%" height="72%" id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31430.91351363428!2d76.33356538296421!3d10.028064210817243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c500a988fd7%3A0x119073ef7f0a84f0!2sGovt.+Model+Engineering+College!5e0!3m2!1sen!2sin!4v1431708588942"></iframe>
+		<div class="" style="margin-top:-27px;">
+            <h3 class="title">Get in Touch
+                <span class="heading-divider"></span>
+            </h3>
+            <div class="col-sm-6 col-md-6" data-animation="fadeInUp" data-animation-delay="700">
+                <div class="thumbnail no-border no-padding text-center">
+                    <div class="caption before-media">
+                        <h3 class="caption-title">AKHIL PARAKKAT</h3>
+                        <p class="caption-category">Chairman</p>
+                        <p class="caption-category">akhilparakkat@gmail.com</p>
+                        <p class="caption-category">+918129890945</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5" data-animation="fadeInUp" data-animation-delay="700">
+                <div class="thumbnail no-border no-padding text-center">
+                    <div class="caption before-media">
+                        <h3 class="caption-title">ANJU ANN JOSEPH</h3>
+                        <p class="caption-category">Co-convener</p>
+                        <p class="caption-category">anju1994.mec@gmail.com</p>
+                        <p class="caption-category">+919656993654</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
